@@ -5,13 +5,14 @@ Name:		cdlabelgen
 Version:	1.5.0
 Release:	5
 License:	GPL
-Group:		Utilities/Text
-Group(fr):	Utilitaires/Texte
-Group(pl):	Narzêdzia/Tekst
 Vendor:		B. W. Fitzpatrick <fitz@red-bean.com>
+Group:		Applications/Text
+Group(de):	Applikationen/Text
+Group(pl):	Aplikacje/Tekst
 Source0:	http://www.red-bean.com/~bwf/software/cdlabelgen/%{name}-%{version}.tar.gz
-Patch0:		cdlabelgen-hpdj.patch
+Patch0:		%{name}-hpdj.patch
 URL:		http://www.red-bean.com/~bwf/software/cdlabelgen/
+BuildRequires:	perl-devel >= 5.6.1
 Requires:	perl >= 5.003
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
@@ -43,11 +44,12 @@ pod2man --section=1 cdlabelgen > cdlabelgen.1
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_datadir}}
 
-%{__make} install BASE_DIR=$RPM_BUILD_ROOT%{_prefix}
+%{__make} install \
+	BASE_DIR=$RPM_BUILD_ROOT%{_prefix}
 
 install cdlabelgen.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
-gzip -9nf ChangeLog README $RPM_BUILD_ROOT%{_mandir}/man1/*
+gzip -9nf ChangeLog README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
