@@ -54,5 +54,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc ChangeLog README
 %attr(755,root,root) %{_bindir}/cdlabelgen
-%{_mandir}/man1/cdlabelgen.1.gz
+%{_mandir}/man1/cdlabelgen.1*
 %{_datadir}/cdlabelgen
