@@ -11,7 +11,7 @@ Vendor:		B. W. Fitzpatrick <fitz@red-bean.com>
 Source0:	http://www.red-bean.com/~bwf/software/cdlabelgen/%{name}-%{version}.tar.gz
 URL:		http://www.red-bean.com/~bwf/software/cdlabelgen/
 Requires:	perl >= 5.003
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
 %description
