@@ -47,14 +47,12 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_datadir}}
 
 install cdlabelgen.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
-gzip -9nf ChangeLog README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {ChangeLog,README}.gz
+%doc ChangeLog README
 %attr(755,root,root) %{_bindir}/cdlabelgen
 %{_mandir}/man1/cdlabelgen.1.gz
 %{_datadir}/cdlabelgen
