@@ -2,25 +2,25 @@
 Summary:	cdlabelgen - generates frontcards and traycards for CDs
 Name:		cdlabelgen
 Version:	1.5.0
-Release:	1
-Copyright:	GPL
+Release:	2
+License:	GPL
 Group:		Utilities/Text
-URL:		http://www.red-bean.com/~bwf/software/cdlabelgen
+Group(fr):	Utilitaires/Texte
+Group(pl):	Narzêdzia/Tekst
 Vendor:		B. W. Fitzpatrick <fitz@red-bean.com>
-Source:		%{name}-%{version}.tar.gz
+Source0:	http://www.red-bean.com/~bwf/software/cdlabelgen/%{name}-%{version}.tar.gz
+URL:		http://www.red-bean.com/~bwf/software/cdlabelgen/
 Requires:	perl >= 5.003
-BuildRoot:	/tmp/%{name}-%{version}
+BuildRoot:	/tmp/%{name}-%{version}-root
 BuildArch:	noarch
 
 %description
-This is BETA software! Please be gentle.
-
-cdlabelgen was designed to simplify the process of generating labels
-for CD's. It originated as a program to allow auto generation of
-frontcards and traycards for CD's burned via an automated mechanism
-(specifically for archiving data). Note that cdlabelgen does not
-actually print anything--it just spits out postscript, which you can
-then do with as you please.
+This is BETA software! Please be gentle.  cdlabelgen was designed to
+simplify the process of generating labels for CD's. It originated as a
+program to allow auto generation of frontcards and traycards for CD's
+burned via an automated mechanism (specifically for archiving data). Note
+that cdlabelgen does not actually print anything--it just spits out
+postscript, which you can then do with as you please.
 
 %prep
 %setup -q
