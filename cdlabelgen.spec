@@ -28,7 +28,7 @@ Program ten jest w fazie beta! Prosimy o wyrozumia³o¶æ. Cdlabelgen
 napisano w celu uproszczenia procesu tworzenia etykiet na CD. Powsta³
 jako projekt, który mia³ pomóc w automatycznej generacji wk³adek do
 pude³ek na wypalane p³yty CD (zw³aszcza przy archiwizacji danych).
-Nalezy zwróciæ uwagê, ¿e cdlabelgen sam w sobie nic nie drukuje,
+Nale¿y zwróciæ uwagê, ¿e cdlabelgen sam w sobie nic nie drukuje,
 tworzy jedynie plik postscriptowy, który mo¿na samemu wydrukowaæ.
 
 %prep
