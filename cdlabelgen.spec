@@ -12,6 +12,7 @@ Source0:	http://www.aczone.com/pub/tools/%{name}-%{version}.tgz
 Patch0:		%{name}-manlocation.patch
 URL:		http://www.aczone.com/tools/cdinsert/
 BuildRequires:	perl-devel >= 1:5.6.1
+BuildRequires:	perl-tools-pod
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
