@@ -3,13 +3,14 @@ Summary:	cdlabelgen - generates frontcards and traycards for CDs
 Summary(pl):	Program do generowania wk³adek do pude³ek na p³yty CD
 Name:		cdlabelgen
 Version:	1.5.0
-Release:	4
+Release:	5
 License:	GPL
 Group:		Utilities/Text
 Group(fr):	Utilitaires/Texte
 Group(pl):	Narzêdzia/Tekst
 Vendor:		B. W. Fitzpatrick <fitz@red-bean.com>
 Source0:	http://www.red-bean.com/~bwf/software/cdlabelgen/%{name}-%{version}.tar.gz
+Patch0:		cdlabelgen-hpdj.patch
 URL:		http://www.red-bean.com/~bwf/software/cdlabelgen/
 Requires:	perl >= 5.003
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -33,6 +34,7 @@ tworzy jedynie plik postscriptowy, który mo¿na samemu wydrukowaæ.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 pod2man --section=1 cdlabelgen > cdlabelgen.1
