@@ -8,6 +8,7 @@ License:	GPL
 Vendor:		B. W. Fitzpatrick <fitz@red-bean.com>
 Group:		Applications/Text
 Source0:	http://www.aczone.com/pub/tools/%{name}-%{version}.tgz
+# Source0-md5:	33177cf123ed5d74326a4a8c25378f26
 Patch0:		%{name}-manlocation.patch
 URL:		http://www.aczone.com/tools/cdinsert/
 BuildRequires:	perl-devel >= 5.6.1
