@@ -2,7 +2,7 @@
 Summary:	cdlabelgen - generates frontcards and traycards for CDs
 Name:		cdlabelgen
 Version:	1.5.0
-Release:	3
+Release:	4
 License:	GPL
 Group:		Utilities/Text
 Group(fr):	Utilitaires/Texte
