@@ -1,3 +1,4 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	cdlabelgen - generates frontcards and traycards for CDs
 Name:		cdlabelgen
 Version:	1.5.0
