@@ -1,0 +1,11 @@
+--- cdlabelgen-1.5.0/postscript/template.ps	Thu Sep  6 18:21:26 2001
++++ cdlabelgen-1.5.0-hpdj/postscript/template.ps	Thu Sep  6 18:23:58 2001
+@@ -533,7 +533,7 @@
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %% And off we go
+ %% Position ourselves in a reasonable place
+-	 .5 in .5 in translate
++	 .5 in .75 in translate
+ 
+ 	 first_endcap
+ 	 tray_card
