@@ -40,7 +40,7 @@ pod2man --section=1 cdlabelgen > cdlabelgen.1
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1,%{_datadir}}
 
-make install BASE_DIR=$RPM_BUILD_ROOT%{_prefix}
+%{__make} install BASE_DIR=$RPM_BUILD_ROOT%{_prefix}
 
 install cdlabelgen.1 $RPM_BUILD_ROOT%{_mandir}/man1
 
