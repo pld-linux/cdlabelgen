@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	cdlabelgen - generates frontcards and traycards for CDs
-Summary(pl):	Program do generowania wk≥adek do pude≥ek na p≥yty CD
+Summary(pl.UTF-8):   Program do generowania wk≈Çadek do pude≈Çek na p≈Çyty CD
 Name:		cdlabelgen
 Version:	3.5.0
 Release:	1
@@ -25,13 +25,13 @@ burned via an automated mechanism (specifically for archiving data).
 Note that cdlabelgen does not actually print anything--it just spits
 out postscript, which you can then do with as you please.
 
-%description -l pl
-Program ten jest w fazie beta! Prosimy o wyrozumia≥o∂Ê. Cdlabelgen
-napisano w celu uproszczenia procesu tworzenia etykiet na CD. Powsta≥
-jako projekt, ktÛry mia≥ pomÛc w automatycznej generacji wk≥adek do
-pude≥ek na wypalane p≥yty CD (zw≥aszcza przy archiwizacji danych).
-Naleøy zwrÛciÊ uwagÍ, øe cdlabelgen sam w sobie nic nie drukuje,
-tworzy jedynie plik postscriptowy, ktÛry moøna samemu wydrukowaÊ.
+%description -l pl.UTF-8
+Program ten jest w fazie beta! Prosimy o wyrozumia≈Ço≈õƒá. Cdlabelgen
+napisano w celu uproszczenia procesu tworzenia etykiet na CD. Powsta≈Ç
+jako projekt, kt√≥ry mia≈Ç pom√≥c w automatycznej generacji wk≈Çadek do
+pude≈Çek na wypalane p≈Çyty CD (zw≈Çaszcza przy archiwizacji danych).
+Nale≈ºy zwr√≥ciƒá uwagƒô, ≈ºe cdlabelgen sam w sobie nic nie drukuje,
+tworzy jedynie plik postscriptowy, kt√≥ry mo≈ºna samemu wydrukowaƒá.
 
 %prep
 %setup -q
