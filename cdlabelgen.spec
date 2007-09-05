@@ -2,14 +2,13 @@
 Summary:	cdlabelgen - generates frontcards and traycards for CDs
 Summary(pl.UTF-8):	Program do generowania wkładek do pudełek na płyty CD
 Name:		cdlabelgen
-Version:	3.5.0
+Version:	4.0.0
 Release:	1
 License:	GPL
 Vendor:		B. W. Fitzpatrick <fitz@red-bean.com>
 Group:		Applications/Text
 Source0:	http://www.aczoom.com/pub/tools/%{name}-%{version}.tgz
-# Source0-md5:	bbe82a25e9eeb66df54ca8f61d561f59
-Patch0:		%{name}-manlocation.patch
+# Source0-md5:	0b8225fd914b5c7aa1d3e616b1c8accc
 URL:		http://www.aczoom.com/tools/cdinsert/
 BuildRequires:	perl-devel >= 1:5.6.1
 BuildRequires:	perl-tools-pod
@@ -35,7 +34,6 @@ tworzy jedynie plik postscriptowy, który można samemu wydrukować.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 pod2man --section=1 cdlabelgen.pod > cdlabelgen.1
