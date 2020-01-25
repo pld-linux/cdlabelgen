@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	cdlabelgen - generates frontcards and traycards for CDs
 Summary(pl.UTF-8):	Program do generowania wkładek do pudełek na płyty CD
 Name:		cdlabelgen
